@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ExamenP4</string>
+    <string name="selecciona_letra">Selecciona letra</string>
+    <string name="selecciona_numero">Selecciona número</string>
+</resources>

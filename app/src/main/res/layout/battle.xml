@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título de la aplicación -->
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Batalla Naval"
+        android:textSize="24sp"
+        android:layout_gravity="center"/>
+
+    <!-- Canvas donde se muestra el mapa -->
+    <ImageView
+        android:id="@+id/imageViewMapa"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+
+    <!-- Listas desplegables para seleccionar la coordenada de ataque -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Spinner
+            android:id="@+id/spinnerLetras"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:prompt="@string/selecciona_letra"/> <!-- Cambiado el texto directo a una referencia de cadena -->
+
+        <Spinner
+            android:id="@+id/spinnerNumeros"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:prompt="@string/selecciona_numero"/> <!-- Cambiado el texto directo a una referencia de cadena -->
+    </LinearLayout>
+
+    <!-- Botón ATACAR -->
+    <Button
+        android:id="@+id/botonAtacar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ATACAR"/>
+
+    <!-- Marcador de puntuación -->
+    <TextView
+        android:id="@+id/textViewPuntuacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puntuación: 0"
+        android:textSize="18sp"
+        android:layout_gravity="center"/>
+
+    <!-- Botón Pausa/Reproducir tema de juego -->
+    <ToggleButton
+        android:id="@+id/botonPausaReproducir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pausa/Reproducir"/>
+
+    <!-- Mensaje de victoria -->
+    <TextView
+        android:id="@+id/textViewVictoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Has Ganado!"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+</LinearLayout>
