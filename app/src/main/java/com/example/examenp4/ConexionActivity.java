@@ -29,7 +29,7 @@ public class ConexionActivity extends AppCompatActivity{
 
                 // Ejemplo: Inicia una nueva actividad
                 Intent intent = new Intent(ConexionActivity.this, Battle.class);
-                intent.putExtra("nombreUsuario", nombreUsuario); // Puedes enviar datos extras si es necesario
+                intent.putExtra("nombreUsuario", nombreUsuario); 
                 startActivity(intent);
             }
         });
